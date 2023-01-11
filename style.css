@@ -1,0 +1,18 @@
+html {
+    --white: #ffffff;
+    --black: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: blue;
+}
+
+main {
+    background-color: chocolate;
+}
+
+footer {
+    background-color: deeppink;
+}
