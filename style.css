@@ -1,6 +1,11 @@
-html {
+:root {
     --white: #ffffff;
     --black: #000000;
+}
+
+/* MOBILE FIRST CODE */
+
+html {
     margin: 0;
     padding: 0;
 }
@@ -15,4 +20,18 @@ main {
 
 footer {
     background-color: deeppink;
+}
+
+/* TABLET VIEW (480px <) */
+@media (min-width: 30em) {
+}
+
+
+/* lAPTOP SCREENS (769px <) */
+@media (min-width: 769px) {
+}
+
+
+/* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
+@media (min-width: 1025px) {
 }
