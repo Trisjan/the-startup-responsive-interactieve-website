@@ -38,7 +38,7 @@ footer {
 
 /* TABLET VIEW (480px <) */
 @media (min-width: 30em) {
-    body {
+    main {
         background-color: chartreuse;
     }
 }
@@ -46,7 +46,7 @@ footer {
 
 /* lAPTOP SCREENS (769px <) */
 @media (min-width: 769px) {
-    body {
+    main {
         background-color: hotpink;
     }
 }
@@ -54,7 +54,7 @@ footer {
 
 /* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
 @media (min-width: 1025px) {
-    body {
+    main {
         background-color: darkslategrey;
     }
 }
