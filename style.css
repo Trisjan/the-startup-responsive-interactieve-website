@@ -5,12 +5,26 @@ html {
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     background-color: blue;
 }
 
 main {
     background-color: chocolate;
+}
+
+main h1 :first-child {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    max-width: 100%;
 }
 
 footer {
