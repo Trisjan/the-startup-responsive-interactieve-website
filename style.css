@@ -38,14 +38,23 @@ footer {
 
 /* TABLET VIEW (480px <) */
 @media (min-width: 30em) {
+    body {
+        background-color: chartreuse;
+    }
 }
 
 
 /* lAPTOP SCREENS (769px <) */
 @media (min-width: 769px) {
+    body {
+        background-color: hotpink;
+    }
 }
 
 
 /* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
 @media (min-width: 1025px) {
+    body {
+        background-color: darkslategrey;
+    }
 }
