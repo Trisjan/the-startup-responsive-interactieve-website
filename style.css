@@ -13,27 +13,86 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: chocolate;
 }
 
 nav {
     background-color: blue;
 }
 
-main {
-    background-color: chocolate;
+nav img {
+    height: 19%;
+    width: 19%;
+    margin: 0.5em;
 }
 
-main h1 :first-child {
+/* main {
+    background-color: chocolate;
+} */
+
+main h1 {
+    margin: 0;
+    padding: 0;
+}
+
+main section h2 {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+main section {
+    background-color: #ffffff;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+main h1:first-child {
     display: flex;
     justify-content: center;
 }
 
 main img {
     max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section div {
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 footer {
-    background-color: deeppink;
+    background-color: #585858;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #333;
 }
 
 /* TABLET VIEW (480px <) */
