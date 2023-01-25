@@ -13,17 +13,24 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: chocolate;
+    background-color: darkslategrey;
+}
+
+header {
+    background-color: #596D64;
+}
+
+header img {
+    font-size: 0.5em;
+    margin: 0.5em;
 }
 
 nav {
-    background-color: blue;
+    background-color: #E4E5DF;
 }
 
-nav img {
-    height: 19%;
-    width: 19%;
-    margin: 0.5em;
+nav section .nav-menu-items {
+    font-size: 0.5rem;
 }
 
 /* main {
@@ -41,6 +48,7 @@ main section h2 {
 }
 
 main section {
+    display: inline-block;
     background-color: #ffffff;
     margin: 1em;
     border-radius: 5px;
@@ -55,6 +63,7 @@ main img {
     max-width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    max-height: 500px;
 }
 
 main section div {
@@ -104,16 +113,28 @@ footer ul li a:hover {
 
 
 /* lAPTOP SCREENS (769px <) */
-@media (min-width: 769px) {
+@media (min-width: 48.0625em) {
     main {
         background-color: hotpink;
+    }
+
+    main img {
+        max-height: 500px;
     }
 }
 
 
 /* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
-@media (min-width: 1025px) {
+@media (min-width: 64.0625em) {
     main {
         background-color: darkslategrey;
+    }
+
+    main section {
+        max-width: 30%;
+    }
+
+    main img {
+        max-height: 720px;
     }
 }
