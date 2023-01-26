@@ -238,7 +238,7 @@ main.about section.audience-company {
 
 /* HOME PAGE */
 main.home section.landing-screen {
-    width: 100%;
+    max-width: 100%;
     background-image: url('img/home-page-background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
