@@ -1,6 +1,8 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --dark-green: darkslategrey;
+    --creme-white: #E4E5DF;
 }
 
 /* MOBILE FIRST CODE */
@@ -8,16 +10,13 @@
 html {
     margin: 0;
     padding: 0;
+    font-family:Georgia, serif;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: darkslategrey;
-}
-
-header {
-    background-color: #596D64;
+    background-color: var(--dark-green);
 }
 
 header img {
@@ -25,56 +24,273 @@ header img {
     margin: 0.5em;
 }
 
-nav {
-    background-color: #E4E5DF;
+/* /////////// */
+/* NAVBAR */
+/* /////////// */
+
+.navbar {
+    background-color: var(--white);
+    padding: 1.25em;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav section .nav-menu-items {
-    font-size: 0.5rem;
+.navbar .navigation a {
+    color: var(--dark-green);
+    text-decoration: none;
 }
 
-/* main {
-    background-color: chocolate;
-} */
+.navbar img {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+}
 
-main h1 {
-    margin: 0;
+.navbar img:nth-of-type(2) {
+    padding-right: 5em;
+}
+
+.navbar nav {
+    display: none;
+}
+.navbar nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--creme-white);
+} 
+
+.navbar nav.active a {
+    padding: 1.25em;
+    color: var(--dark-green);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* ///////// */
+/* MAIN STYLING */
+/* ///////// */
+
+
+/* INDEX */
+main.index {
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding: 0;
 }
 
-main section h2 {
+
+main.index h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--creme-white);
+}
+
+main.index  .product-cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    justify-items: center;
+    color: var(--dark-green);
+}
+
+main.index  .product-cards section div img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+main.index .product-cards section div .product-buy-info a {
+    justify-items: end;
+}
+
+main.index div {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.index  section h2 {
     margin-top: 0.5em;
     margin-left: 0.5em;
 }
 
-main section {
-    display: inline-block;
-    background-color: #ffffff;
+main.index  section {
+    background-color: var(--white);
     margin: 1em;
     border-radius: 5px;
+    max-width: 20rem;
+    transition: 1s;
 }
 
-main h1:first-child {
+main.index  section:hover {
+    scale: 1.025;
+}
+
+main.index  h1:first-child {
     display: flex;
     justify-content: center;
 }
 
-main img {
+main.index  img {
     max-width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     max-height: 500px;
 }
 
-main section div {
-    display: flex;
-    align-items: center;
+main.index .more-info {
+    border-style: none;
+}
+
+/* ABOUT */
+main.about {
+    margin: 0;
+    padding: 0;
+}
+
+main.about section.about-company {
+    width: 100%;
+    background-image: url('img/oil-background-stock-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main.about section.about-company h1 {
+    margin: 0;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    padding-left: 20%;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+main.about section.reasoning-company {
+    display: initial;
+    height: 100vh;
+    color: var(--creme-white);
+}
+
+main.about section.reasoning-company h1 {
+    font-size: 2.5em;
+    padding-left: 2em;
+    padding-top: 2em;
     margin: 0;
 }
+
+main.about section.reasoning-company div.grid {
+    letter-spacing: 0.06rem;
+    line-height: 1.7;
+    font-weight: 300;
+    height: 80vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+main.about section.reasoning-company img {
+    width: 100%;
+    border-radius: 0.5em;
+    max-height: 100%;
+}
+
+main.about section.audience-company h1 {
+    font-size: 2.5em;
+    padding-left: 2em;
+    padding-top: 2em;
+    margin: 0;
+    color: var(--dark-green);
+}
+
+main.about section.audience-company div {
+    letter-spacing: 0.06rem;
+    line-height: 1.7;
+    font-weight: 300;
+    height: 80vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    color: var(--dark-green);
+}
+
+main.about section.audience-company img {
+    width: 100%;
+    border-radius: 0.5em;
+    max-height: 100%;
+}
+
+main.about section.audience-company {
+    height: 100vh;
+    background-color: var(--creme-white);
+}
+
+/* HOME PAGE */
+main.home section.landing-screen {
+    width: 100%;
+    background-image: url('img/home-page-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    padding-top: 30vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+    color: var(--dark-green);
+}
+
+main.home section.landing-screen .container-home-page p {
+    margin-bottom: 3rem;
+    max-width: 100%;
+    margin-right: 2em;
+}
+
+main.home section.landing-screen .container-home-page a {
+    background-color: var(--dark-green);
+    font-size: 0.75em;
+    padding: 0.5em 1.5em;
+    margin: 0.4rem;
+    border-radius: 2rem;
+    position: relative;
+    text-decoration: none;
+    color: var(--creme-white);
+    font-weight: bold;
+    transition: 1s ease;
+}
+
+main.home section.landing-screen .container-home-page a:hover {
+    scale: 2em;
+}
+
+main.home section.landing-screen h1 {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+/* ///////// */
+/* FOOTER STYLING */
+/* ///////// */
 
 footer {
     background-color: #585858;
     padding: 2rem 0;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
 }
 
 footer p {
@@ -106,35 +322,135 @@ footer ul li a:hover {
 
 /* TABLET VIEW (480px <) */
 @media (min-width: 30em) {
-    main {
+    main.index {
         background-color: chartreuse;
+    }
+
+    main.index div {
+        margin-left: 0.75em;
+    }
+
+    main.index section {
+        max-width: 100%;
+    }
+
+    main.index .product-cards { 
+        margin-left: 5em;
+        margin-right: 5em;
     }
 }
 
 
 /* lAPTOP SCREENS (769px <) */
-@media (min-width: 48.0625em) {
-    main {
+@media (min-width: 50.5em) {
+    .navbar img:first-child {
+        height: 45px;
+        width: 45px;
+    }
+    main.index {
         background-color: hotpink;
     }
 
-    main img {
+    main.index img {
         max-height: 500px;
+    }
+
+    main.about section.about-company h1 {
+        margin: 0;
+        padding-top: 50vh;
+        padding-bottom: 50vh;
+        padding-left: 20%;
+        font-size: 3em;
+    }
+
+    main.about section.reasoning-company div.grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main.about section.reasoning-company div.grid div {
+        padding: 1em;
+    }
+
+    main.about section.reasoning-company div.grid div span {
+        display: block;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+
+    main.about section.audience-company div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main.about section.audience-company div span {
+        display: block;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+
+    main.home section.landing-screen h1 {
+        font-size: 4em;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    main.home section.landing-screen p {
+        letter-spacing: 0.06rem;
+        line-height: 1.7;
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+
+    main.home section.landing-screen .container-home-page a {
+        font-size: 1em;
+        padding: 0.7em 3em;
+        margin: 0.4rem;
+    }
+
+    nav.navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    nav.navigation a {
+        font-size: 1.125em;
+        padding-right: 2em;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    div.toggle-menu {
+        display: none;
     }
 }
 
 
 /* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
 @media (min-width: 64.0625em) {
-    main {
+    main.index {
         background-color: darkslategrey;
     }
 
-    main section {
-        max-width: 30%;
+    main.index .product-cards { 
+        margin-left: 10em;
+        margin-right: 10em;
     }
 
-    main img {
-        max-height: 720px;
+    main.about section.reasoning-company div.grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main.home section.landing-screen h1 {
+        font-size: 6em;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 103rem) {
+    main.index .product-cards { 
+        margin-left: 20em;
+        margin-right: 20em;
     }
 }
