@@ -323,9 +323,6 @@ footer ul li a:hover {
 
 /* TABLET VIEW (480px <) */
 @media (min-width: 30em) {
-    main.index {
-        background-color: chartreuse;
-    }
 
     main.index div {
         margin-left: 0.75em;
@@ -347,9 +344,6 @@ footer ul li a:hover {
     .navbar img:first-child {
         height: 45px;
         width: 45px;
-    }
-    main.index {
-        background-color: hotpink;
     }
 
     main.index img {
@@ -429,10 +423,7 @@ footer ul li a:hover {
 
 /* DESKTOP SCREENS (GROTE SCHERMEN 1025px <) */
 @media (min-width: 64.0625em) {
-    main.index {
-        background-color: darkslategrey;
-    }
-
+    
     main.index .product-cards { 
         margin-left: 10em;
         margin-right: 10em;
