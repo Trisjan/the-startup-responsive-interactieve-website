@@ -339,7 +339,7 @@ footer ul li a:hover {
 }
 
 
-/* lAPTOP SCREENS (769px <) */
+/* lAPTOP SCREENS (808px <) */
 @media (min-width: 50.5em) {
     .navbar img:first-child {
         height: 45px;
